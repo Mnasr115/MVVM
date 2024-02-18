@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:my_advanced_projects/presentation/forget_password/forget_password.dart';
 import 'package:my_advanced_projects/presentation/login/login_view.dart';
@@ -6,7 +6,6 @@ import 'package:my_advanced_projects/presentation/main/main_view.dart';
 import 'package:my_advanced_projects/presentation/register/register_view.dart';
 import 'package:my_advanced_projects/presentation/resources/strings_manager.dart';
 import 'package:my_advanced_projects/presentation/splash/splash_view.dart';
-import 'package:my_advanced_projects/presentation/store_details/store_details.dart';
 
 class Routes {
   static const String splashRoute = "/";
@@ -39,10 +38,6 @@ class RoutesGenerator {
       case Routes.mainRoute:
         return MaterialPageRoute(
           builder: (_) => const MainView(),
-        );
-      case Routes.storeDetailsRoute:
-        return MaterialPageRoute(
-          builder: (_) => const StoreDetailsView(),
         );
         default:
           return unDefinedRoute();
